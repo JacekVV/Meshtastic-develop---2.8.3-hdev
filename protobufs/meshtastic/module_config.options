@@ -1,0 +1,60 @@
+*CannedMessageConfig.allow_input_source max_size:16
+
+*MQTTConfig.address max_size:64
+*MQTTConfig.username max_size:64
+*MQTTConfig.password max_size:32
+*MQTTConfig.root max_size:32
+
+*AudioConfig.ptt_pin int_size:8
+*AudioConfig.i2s_ws int_size:8
+*AudioConfig.i2s_sd int_size:8
+*AudioConfig.i2s_din int_size:8
+*AudioConfig.i2s_sck int_size:8
+
+*ExternalNotificationConfig.output_vibra int_size:8
+*ExternalNotificationConfig.output_buzzer int_size:8
+*ExternalNotificationConfig.nag_timeout int_size:16
+
+*RemoteHardwareConfig.available_pins max_count:4
+*RemoteHardwarePin.name max_size:15
+*RemoteHardwarePin.gpio_pin int_size:8
+
+*AmbientLightingConfig.current int_size:8
+*AmbientLightingConfig.red int_size:8
+*AmbientLightingConfig.green int_size:8
+*AmbientLightingConfig.blue int_size:8
+
+*DetectionSensorConfig.monitor_pin int_size:8
+*DetectionSensorConfig.name max_size:20
+*DetectionSensorConfig.detection_trigger_type max_size:8
+
+*StatusMessageConfig.node_status max_size:80
+
+*MeshBeaconConfig.broadcast_message max_size:61
+*MeshBeaconConfig.broadcast_offer_channel.name max_size:12
+*MeshBeaconConfig.broadcast_offer_channel.psk max_size:32
+*MeshBeaconConfig.broadcast_targets max_count:4
+
+# fw+ NodeMod sizes
+*NodeModConfig.text_status max_size:200
+*NodeModConfig.emoji max_size:4
+*NodeModAdminConfig.additional_chutil int_size:8
+*NodeModAdminConfig.additional_txutil int_size:8
+*NodeModAdminConfig.additional_polite_channel_percent int_size:8
+*NodeModAdminConfig.additional_polite_duty_cycle_percent  int_size:8
+*NodeModAdminConfig.current_max_channel_util_percent int_size:8
+*NodeModAdminConfig.current_polite_channel_util_percent int_size:8
+*NodeModAdminConfig.current_polite_duty_cycle_percent int_size:8
+*NodeModAdminConfig.auto_responder_text max_size:60
+*NodeModAdminConfig.rx_packet_history max_count:40
+*NodeModAdminConfig.telemetry_limiter_packets_per_minute int_size:8
+*NodeModAdminConfig.telemetry_limiter_auto_chanutil_threshold int_size:8
+
+# fw+ Broadcast Assist sizes
+# fw+ BroadcastAssistConfig sizing
+*BroadcastAssistConfig.degree_threshold int_size:8
+*BroadcastAssistConfig.dup_threshold int_size:8
+*BroadcastAssistConfig.window_ms int_size:16
+*BroadcastAssistConfig.max_extra_hops int_size:8
+*BroadcastAssistConfig.jitter_ms int_size:16
+*BroadcastAssistConfig.allowed_ports max_count:8

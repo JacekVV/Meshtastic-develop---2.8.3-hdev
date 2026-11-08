@@ -1,0 +1,22 @@
+*packet_index int_size:8
+*packet_total int_size:8
+*RxPacketHistory.rx_packet_history max_count:40
+*RxAvgTimeHistory.rx_avg_history max_count:40
+*NodesList.node_list max_count:10
+*NodeEntry.long_name max_size:40
+*NodeEntry.short_name max_size:5
+*PortCountersHistory.port_counter_history max_count:20
+*ExchangeList.exchange_list max_count:12
+*AirActivityHistory.air_activity_history max_count:10
+*NodeStats.firmware_version max_size:18
+*NodeStats.opportunistic_mode int_size:8
+*RoutingErrorsHistory.routing_errors max_count:40
+*RoutingTable.routes max_count:40
+
+# fw+ Broadcast Assist stats sizes
+*BroadcastAssistStats.reflood_attempts int_size:16
+*BroadcastAssistStats.reflood_sent int_size:16
+*BroadcastAssistStats.suppressed_dup int_size:16
+*BroadcastAssistStats.suppressed_degree int_size:16
+*BroadcastAssistStats.suppressed_airtime int_size:16
+*BroadcastAssistStats.last_reflood_age_secs int_size:16
